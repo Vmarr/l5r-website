@@ -1,0 +1,357 @@
+@import url(../../common--theme/base/css/text_highlighter.html);
+ @import url(../../common--theme/base/css/autocomplete.html);
+ @import url(../../common--theme/base/css/forum.html);
+ @import url(../../common--theme/base/css/editor.html);
+ @import url(../../common--theme/base/css/odialog.html);
+ 
+ body{
+     margin: 0px;
+ }
+ 
+ #container {
+    margin: 0 auto;
+     padding: 30px;
+ }
+ 
+ /* header */
+ #header {
+     position: relative;
+     z-index: 30;
+    height: 170px;
+ }
+ 
+ #header h2{
+     margin: 0;
+     padding: 0;
+    position: absolute;
+    left: 50px;
+    top: 110px;
+ }
+ 
+ #content-wrap {
+     _height: 1%;
+     min-height: 1px;
+    padding: 10px 0px 1px 0px;
+ }
+ 
+ /* side-bar */
+ 
+ #side-bar{
+    float: left;
+    width: 200px;
+    padding: 10px;
+    margin: 0px 10px;
+    clear: left;
+}
+ 
+ #page-title{
+     margin: 0 0 0.5em 0;
+    padding-top: 0em; /* Firefox bug? */
+     font-size: 200%;
+     border-bottom: 1px solid #666;
+ }
+ 
+ #main-content{
+    margin: 0px 10px 10px 240px;
+    padding: 10px 10px;
+ }
+ 
+ /* * html #main-content {height: 1%;} */
+ 
+ #license-area {
+     padding: 0.5em 0;
+     color: #555;
+}
+ #account-options li{
+     display: block;
+     margin: 0; padding: 0;
+    width: 100%;
+ }
+#account-options li a {
+     display: block;
+     box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     padding: 2px 5px;
+     z-index: 40;
+    width: 100%;
+ }
+ 
+#account-options li a:hover {
+     color: black;
+ }
+#account-topbutton {
+     font-size: 80%;
+     font-weight: bold;
+     padding: 0 5px;
+ }
+ #top-bar{
+     position: absolute;
+    left: 240px;
+     bottom: 0px;
+     z-index:0;
+    width: 720px;
+}
+ 
+ #top-bar li {
+     list-style: none;
+     float:left;
+     margin: 0 5px;
+    padding:0;    
+    height: 22px;
+ }
+ #top-bar li ul{
+     padding: 0;
+     text-align: center;
+     display: block;
+     margin: 0;
+    padding: 0.3em 1em;
+     text-decoration: none;
+ }
+ #top-bar a:hover {
+     border-bottom-color:white; /* different border color */
+ }
+ 
+body {
+    background-image: url(../../local--files/stefhen/logo.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: #6C5300;
+ 
+}
+ 
+/* Background color of all content of the page below header */
+#content-wrap {
+    background-color: ;
+    background-repeat: repeat-x;
+    background-position: top center;
+    background-color: ;
+    border: 0px solid black;
+    padding-top: 0px;
+}
+ 
+/* Color of page content */
+#main-content {
+ 
+    background-color: transparent;
+    background-image: url(../../../themes.wdfiles.com/local--files/semi-trans/semi-transbgtransparent.png);
+    background-repeat: repeat;
+    border:1px solid white;
+    /* for IE */
+    filter: alpha(opacity=100);
+    /* CSS3 standard */
+    opacity: 1.0;
+    margin-top: 0px;
+    margin: 0px 240px 10px -11px;
+}
+ 
+#header {
+    width: 940px;
+    margin: 0 auto;
+    height: 170px;
+}
+ 
+#header h1 {
+    position: absolute;
+    left: 20px;
+    top: 53px;
+    display: none;
+}
+ 
+#header h1 a {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-stretch: expanded;
+    text-decoration: none;
+}
+ 
+#header h1 a:hover {
+    color: #00ff21;
+    background-color: transparent;
+    text-decoration: none;
+}
+ 
+#header h2 {
+    display: none;
+    color: #ffff00;
+}
+ 
+/* 1st MENU ELEMENT */
+ 
+/* Background color */
+ 
+#top-bar {
+    bottom: 7px;
+    left: 0px;
+    position: absolute;
+    width: 900px;
+}
+ 
+#top-bar li {
+    background-color: transparent;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+}
+ 
+/* Font color and decoration */
+#top-bar li a {
+    color: white;
+    text-decoration: none;
+}
+ 
+/* Background color on hover */
+#top-bar a:hover{
+    background-color: transparent;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+}
+ 
+/* Font color on hover*/
+#top-bar li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+/* ---------------------------------- */
+ 
+/* 2nd MENU ELEMENT */
+#top-bar ul li ul {
+    background-color: black;
+    opacity: 0.85;
+    border: 0px;
+}
+ 
+#top-bar ul li ul a {
+    background-color: black;
+    -moz-border-radius: 0px;
+}
+ 
+#top-bar ul li ul a:hover {
+    background-color: black;
+    color: #cc0000;
+    -moz-border-radius: 0px;
+}
+ 
+/* ---------------------------------- */
+ 
+/* color of side-bar*/
+#side-bar {
+    background-color: black;
+    background-opacity: 0.75;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    border:1px solid white;
+    float:right;
+    width: 180px;
+}
+ 
+/*  FONTS   */
+ 
+/* General font family and color*/
+body {
+    font-family: Verdana, Arial, Helvetica;
+    color: ;
+}
+ 
+/* Font family of headers */
+h1,h2,h3,h4,h5,h6{
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+}
+ 
+/* Sizes, weight and text-decorations of headers */
+h1{
+    font-size: 190%;
+    font-weight: normal;
+    text-decoration: none;
+}
+h2{
+    font-weight: normal;
+    font-size: 150%;
+    text-decoration: none;
+}
+h3{
+    font-weight: normal;
+    font-size: 130%;
+    text-decoration: none;
+}
+h4{
+    font-weight: bold;
+    font-size: 120%;
+    text-decoration: none;
+}
+h5 {
+    font-weight: bold;
+    font-size: 100%;
+    text-decoration: none;
+}
+h6 {
+    font-weight: bold;
+    font-size: 90%;
+    text-decoration: none;
+}
+ 
+a {
+    color:  #cc0000;
+}
+ 
+a:hover {
+    color: #ccff00;
+    background-color: #303030;
+}
+ 
+a:visited {
+    color:  #cc6600;
+}
+ 
+a.newpage {
+    color:  #ffff00;
+}
+ 
+a.newpage:hover {
+    color: #ff7f00;
+    text-decoration: underline;
+}
+ 
+/* Font, size, color and border of page title */
+#page-title {
+    font-family: Verdana, Arial, Helvetica;
+    border-bottom: 1px solid #666666;
+    font-size: 200%;
+    margin: 0pt 0pt 0.5em;
+    padding-top: 0em;
+}
+ 
+#footer {
+    color: white;
+    opacity: 0.8;
+    border-bottom:1px solid white;
+    border-top:1px solid white;
+}
+ 
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+ 
+#license-area {
+    color: white;
+}
+ 
+#license-area a {
+    color: gray;
+    text-decoration: none;
+}
+ 
+#license-area a:hover {
+    color: gray;
+    text-decoration: underline;
+    background-color: transparent;
+}
+ 
+#login-status {
+    color: white;
+}
+ 
+blockquote {
+background-color: transparent;
+}
